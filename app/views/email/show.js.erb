@@ -1,7 +1,6 @@
-alert("Display Email body!");
 $('p.email_object').text( '<%= (@email.object) %>');
-$('p.email_body').text( '<%= (@email.body) %>');
-$('p.email_destroy_btn').html('<%= link_to "Détruire", @email, class:"destroy_email", data: {confirm: "êtes-vous sûr ?"}, :remote => true, method: :delete %>');
+$('p.email_body').text( '<%= (@body) %>');
+$('p.email_destroy_btn').html('<%= link_to "Détruire", @email, class:"btn btn-danger", data: {confirm: "êtes-vous sûr ?"}, :remote => true, method: :delete %>');
 $('#email_body').fadeIn();
 
 

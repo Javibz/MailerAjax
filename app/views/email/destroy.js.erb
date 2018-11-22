@@ -1,3 +1,2 @@
-alert("Email deleted !");
 $('#email_body').fadeOut();
-$('#<%=(@email.id)%>').fadeOut();
+$('#<%=(@email.id)%>').parent().fadeOut();

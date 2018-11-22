@@ -7,7 +7,7 @@ class EmailController < ApplicationController
     @email = Email.find(params['id'])
 
     @email.update(status: true);
-
+    @body = @email.body.gsub("'", "`")
     if @email
       respond_to do |format|
         format.html {redirect_to root_path }
