@@ -16,4 +16,4 @@
 ## Mailer Ajax
 Clicker sur un l'objet d'un email dans la colonne "Email Object" pour obtenir son contenu dans la colonne "Email body".
 Si vous souhaitez le supprimer appuyer sur le bouton rouge 🔴!
-Remarquez le magnifique effet sur les emails lu et l'email séléctionné 😉.
+Remarquez le magnifique effet sur les emails lus et l'email séléctionné 😉.
