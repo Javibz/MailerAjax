@@ -24,6 +24,13 @@
 // script de tabulation:
 
 $(document).ready(function() {
+
+    $(".status").each(function() {
+        if ($(this).attr('value') == "true") {
+            $(this).css("background-color", "#d8d8d8");
+        }; 
+      });
+
     $(".modal-signup").hide();
     $(".modal-login").hide();   
     $("ul > .card").hide();

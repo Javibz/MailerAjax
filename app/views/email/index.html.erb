@@ -1,0 +1,32 @@
+<h1>Liste d'emails</h1>
+<br>
+
+<div class="form-group row">
+  <div class="form-group col-md-6">
+    <table style="width:100%">
+      <tr>
+        <th> 
+          <h4>Email Object</h4> 
+        </th>
+      </tr>
+      <% @emails.each do |email| %>
+        <tr>
+          <td class="status" value="<%= email.status %>"> <%= link_to email.object, email_path(email.id), :remote => true, :class => 'email_object', :id => email.id %> </td>
+        </tr>
+      <% end %>
+    </table >
+  </div>
+  <div class="form-group col-md-6" >
+    <h4> Email body </h4>
+    <div id="email_body">
+      <strong>
+          <p class="email_object"> </p>
+      </strong>
+      <p class="email_body"> </p>
+      <p class="email_destroy_btn"> </p>
+    </div>
+  </div>
+</div>
+
+
+

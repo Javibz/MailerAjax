@@ -1,0 +1,14 @@
+alert("Display Email body!");
+$('p.email_object').text( '<%= (@email.object) %>');
+$('p.email_body').text( '<%= (@email.body) %>');
+$('p.email_destroy_btn').html('<%= link_to "Détruire", @email, class:"destroy_email", data: {confirm: "êtes-vous sûr ?"}, :remote => true, method: :delete %>');
+$('#email_body').fadeIn();
+
+
+$(".status").each(function() {
+  if ($(this).attr('value') == "true") {
+      $(this).css("background-color", "#d8d8d8");
+  }; 
+});
+
+$('#<%= (@email.id) %>').parent().css("background-color", "#aaa");
